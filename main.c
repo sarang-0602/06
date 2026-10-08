@@ -1,28 +1,15 @@
 #include <stdio.h>
 
-int sumTwo(int a, int b)
+void square(int a)
 {
-    return a + b;
-}
-
-int square(int n)
-{
-    return n * n;
-}
-
-int get_max(int x, int y)
-{
-    if (x > y)
-        return x;
-    else
-        return y;
+    a = a * a;
 }
 
 int main(void)
 {
-    printf("sumTwo(3, 5) = %d\n", sumTwo(3, 5));
-    printf("square(4) = %d\n", square(4));
-    printf("get_max(7, 12) = %d\n", get_max(7, 12));
+    int a = 2;
+    square(a);
+    printf("a=%i\n", a);
 
     return 0;
 }
