@@ -1,44 +1,26 @@
 #include <stdio.h>
 
-int get_integer(void);
 int factorial(int n);
-int combination(int n, int r);
-
-int main(void)
 {
-    //변수 선언
-    int n, r;
-
-    n = get_integer();
-    r = get_integer();
-
-    printf("C(%d, %d) = %d\n", n, r, combination(n, r));
-
-    return 0;
+    for(i=0, i<a;i++)
 }
 
 int combination(int n, int r)
 {
-    return (factorial(n) / (factorial(n - r) * factorial(r)));
+    int up, down;
+
+    //분자 계산: up에 저장
+    up = factorial(n);
+
+    //분모 계산: down에 저장
+    down = factorial(n-r)*factorial(r);
+
+    return(up/down);
 }
 
-int factorial(int n)
+int main(void)
 {
-    int i;
-    int res = 1;
-
-    for (i = 1; i <= n; i++)
-        res = res * i;
-
-    return res;
-}
-
-int get_integer(void)
-{
-    int value;
-
-    printf("The integer: ");
-    scanf("%d", &value);
-
-    return value;
+    //변수 선언
+    int result;
+    int n,r;
 }
